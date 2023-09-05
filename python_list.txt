@@ -1,0 +1,83 @@
+thislist = ["apple", "banana", "cherry", "orange", "kiwi", "melon", "mango"]
+
+if "apple" in thislist:
+  print("Yes, 'apple' is in the fruits list")
+  
+#This example returns the items from "orange" (-4) to, but NOT including "mango" (-1):
+
+print(thislist[-4:-1])
+
+
+print(thislist[2:])
+#This example returns the items from the beginning to, but NOT including, "kiwi":
+
+
+print(thislist[:4])
+
+#changes the value of it
+thislist[1] = "blackcurrant"
+
+print(thislist)
+
+thislist[2:4] = ["black", "blue","red"]
+print (thislist)
+
+thislist.insert(3,"pineapple")
+print(thislist)
+
+thislist.append("white")
+print(thislist)
+
+#thislist.extend(list or tipule or other)
+
+thislist.pop(1)
+print(thislist)
+
+thislist.pop()
+#it deletes the last element
+
+#del thislist
+#deletes the entire list
+
+#thislist.clear
+#it clears the element in list
+
+thislist = ["apple", "banana", "cherry"]
+for i in range(len(thislist)):
+  print(thislist[i])
+
+thislist = ["apple", "banana", "cherry"]
+i = 0
+while i < len(thislist):
+  print(thislist[i])
+  i = i + 1
+
+fruits = ["apple", "banana", "cherry", "kiwi", "mango"]
+newlist = []
+for x in fruits:
+  if "a" in x:
+    newlist.append(x)
+print(newlist)
+
+
+#to create a new list directly fromm the existing we have to use following syntac
+# syntax : newlist = [ x for in iterable condtion == True]
+newlist = [x for x in thislist if i =="a"]
+#newlist = [x.upper() for x in fruits if condition]
+
+thislist.sort(reverse = True)
+
+#case sensitive sorting causes unexpected result
+
+thislist.sort(key = str.lower)
+
+list = thislist.copy() or newlist = list(thislist)
+print(list)
+print(newlist)
+
+list3 =list1+ list2
+for i in lis1:
+	newlist.append(i)
+    
+list2.append(list1)
+
